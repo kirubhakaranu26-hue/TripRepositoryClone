@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TripAdvisor Clone | MyTrip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700;800&family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header header--sticky">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="nav__brand">MyTrip</a>
+          <div class="nav__menu">
+            <ul class="nav__menu-list">
+              <li>
+                <button class="nav__menu-btn" type="button">Discover</button>
+              </li>
+              <li>
+                <button class="nav__menu-btn" type="button">Review</button>
+              </li>
+              <li><a href="#" class="nav__menu-link">More</a></li>
+            </ul>
+          </div>
+          <div class="nav__actions">
+            <button
+              class="nav__country-btn"
+              type="button"
+              aria-label="Currency: INR"
+            >
+              INR
+            </button>
+            <button class="btn--primary nav__signin-btn" type="button">
+              Sign in
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero__overlay">
+        <h1 class="hero__title">Plan Your Perfect Trip</h1>
+        <p class="hero__subtitle">Hotels, Restaurants, Things to Do & More</p>
+        <button class="btn--primary hero__button" type="button">
+          Start Exploring
+        </button>
+      </div>
+    </section>
+
+    <main>
+      <!-- Categories -->
+      <section class="categories" id="discover">
+        <h1 class="categories__heading">Where to?</h1>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="#search-all" class="categories__link"
+              ><i class="fa-solid fa-globe"></i> Search All</a
+            >
+          </li>
+          <li class="categories__item">
+            <a href="#things" class="categories__link"
+              ><i class="fa-solid fa-person-hiking"></i> Things to Do</a
+            >
+          </li>
+          <li class="categories__item">
+            <a href="#recently-viewed" class="categories__link"
+              ><i class="fa-solid fa-clock-rotate-left"></i> Recently Viewed</a
+            >
+          </li>
+          <li class="categories__item">
+            <a href="#iconic-places" class="categories__link"
+              ><i class="fa-solid fa-mountain-sun"></i> Iconic Places</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Search -->
+      <section class="search" id="search-all">
+        <form class="search__form-default" id="search-all-default">
+          <label class="sr-only" for="search-field"
+            >Search destinations or experiences</label
+          >
+          <input
+            class="search__field"
+            id="search-field"
+            name="q"
+            type="search"
+            placeholder="Places to go, things to do, hotels..."
+            autocomplete="off"
+            aria-label="Search"
+          />
+          <button class="search__submit" type="submit">Search</button>
+        </form>
+      </section>
+
+      <!-- Book CTA Carousel -->
+      <section class="book" id="things">
+        <article class="book__card">
+          <div class="book__gallery">
+            <div class="book__slide book__slide--1">
+              <img
+                src="caption.jpg"
+                alt="Couple exploring a city"
+                loading="lazy"
+              /><button class="book__slide-caption" type="button">
+                @Traveler
+              </button>
+            </div>
+            <div class="book__slide book__slide--2">
+              <img
+                src="caption-2.jpg"
+                alt="Mountain sunrise"
+                loading="lazy"
+              /><button class="book__slide-caption" type="button">
+                @John C
+              </button>
+            </div>
+            <div class="book__slide book__slide--3">
+              <img
+                src="caption-3.jpg"
+                alt="Street food market"
+                loading="lazy"
+              /><button class="book__slide-caption" type="button">
+                @Eddie J
+              </button>
+            </div>
+            <div class="book__slide book__slide--4">
+              <img
+                src="caption-4.jpg"
+                alt="Ocean getaway"
+                loading="lazy"
+              /><button class="book__slide-caption" type="button">
+                @Adrian S
+              </button>
+            </div>
+          </div>
+          <hr class="book__divider" />
+          <div class="book__content">
+            <h2 class="book__title">
+              Find things to do for everything you're into
+            </h2>
+            <p class="book__subtitle">
+              Browse 400,000+ experiences and book with us.
+            </p>
+            <button class="btn--primary book__button" type="button">
+              Book now
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Explore Sections -->
+      <div class="explore">
+        <section class="explore__section" id="interest">
+          <div class="explore__header">
+            <h2 class="explore__title">Find things to do by interest</h2>
+            <p class="explore__subtitle">Whatever you're into, we’ve got it</p>
+          </div>
+          <ul class="explore__list">
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="./exp-5.jpg"
+                  alt="Outdoors"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Outdoors</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="exp-2.jpg"
+                  alt="Food"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Food</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="exp-3.jpg"
+                  alt="Culture"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Culture</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="exp-4.jpg"
+                  alt="Water"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Water</h3>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="explore__section" id="recently-viewed">
+          <div class="explore__header">
+            <h2 class="explore__title">Recently Viewed</h2>
+          </div>
+          <ul class="explore__list">
+            <li>
+              <article class="explore__card explore__card--detailed">
+                <img
+                  class="explore__image explore__image--tall"
+                  src="recent-1.jpg"
+                  alt="Maui Whale Watching"
+                  loading="lazy"
+                />
+                <div class="explore__card-body">
+                  <h3 class="explore__card-title">
+                    Maui Whale Watching Cruise
+                  </h3>
+                  <p class="explore__card-description">from ₹9,655 per adult</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card explore__card--detailed">
+                <img
+                  class="explore__image explore__image--tall"
+                  src="recent-2.jpg"
+                  alt="Ooty Lake Tour"
+                  loading="lazy"
+                />
+                <div class="explore__card-body">
+                  <h3 class="explore__card-title">Private Pykara Lake Tour</h3>
+                  <p class="explore__card-description">from ₹5,000 per group</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card explore__card--detailed">
+                <img
+                  class="explore__image explore__image--tall"
+                  src="./recent-4.jpg"
+                  alt="Sunset Grill"
+                  loading="lazy"
+                />
+                <div class="explore__card-body">
+                  <h3 class="explore__card-title">Sunset Grill</h3>
+                  <p class="explore__card-description">Top rated restaurant</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="explore__section" id="iconic-places">
+          <div class="explore__header">
+            <h2 class="explore__title">Iconic Places</h2>
+          </div>
+          <ul class="explore__list">
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="iconic-6.jpg"
+                  alt="Iconic"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Iconic</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="./oce-8.jpg"
+                  alt="Ocean"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Ocean</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="explore__card">
+                <img
+                  class="explore__image"
+                  src="wake-up-with-the-whales.jpg"
+                  alt="Whales"
+                  loading="lazy"
+                />
+                <div class="explore__overlay">
+                  <h3 class="explore__overlay-title">Whales</h3>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Awards -->
+      <section class="explore__advicer explore__advicer--dark">
+        <div class="explore__awards-content">
+          <img
+            class="footer__logo"
+            src="logo-icon.svg"
+            alt="TripAdvisor Logo"
+            style="width: 40px; height: 40px"
+          />
+          <h2 class="explore__awards-title explore__awards-title--light">
+            Travellers' Choice Best of the Best
+          </h2>
+          <p class="explore__awards-subtext explore__awards-subtext--light">
+            Our highest recognition, awarded annually to the top 1% of
+            businesses on TripAdvisor.
+          </p>
+          <button class="explore__awards-btn" type="button">See Winners</button>
+        </div>
+        <img
+          class="explore__awards-image"
+          src="trust-img.jpg"
+          alt="Awards Background"
+          loading="lazy"
+        />
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <div class="footer__column">
+            <h3 class="footer__subheading">About</h3>
+            <ul class="footer__links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__subheading">Explore</h3>
+            <ul class="footer__links">
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Things to Do</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__subheading">Support</h3>
+            <ul class="footer__links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Safety</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__subheading">Follow Us</h3>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="footer__social-link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="footer__social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__brand">
+            <!-- Small logo -->
+            <img
+              class="footer__logo"
+              src="logo-icon.svg"
+              alt="Logo"
+              style="width: 30px; height: 30px"
+            />
+            <p class="footer__copyright">
+              &copy; 2026 MyTrip. Inspired by TripAdvisor.
+            </p>
+          </div>
+          <div class="footer__legal">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
